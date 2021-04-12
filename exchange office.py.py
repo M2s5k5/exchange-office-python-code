@@ -21,7 +21,7 @@ def currency_converter():
     currency_converter.lift()
 
 
-    currency_converter.configure(background='#007780')
+    currency_converter.configure(background='#A0522D')
 #Definisanje funkcije prilikom izbora valute
     def enter(event):
         #izbor pojasnjeno -- izbor*suma_value, 2 je format nema vez sa mnozenjem valute
@@ -63,10 +63,10 @@ def currency_converter():
     def close_currency_converter():
         currency_converter.destroy()
     #Glavni tekst u progarmu tkzv. Heder
-    Headline_Label = Label(currency_converter, text='Menjacnica Paja 1.0', bg='#007780', fg='white',font=("Century Gothic",16))
+    Headline_Label = Label(currency_converter, text='Menjacnica Paja 1.0', bg='#A0522D', fg='white',font=("Century Gothic",16))
     Headline_Label.grid(row=0,column=0, columnspan=2, padx=5, pady=5, sticky=W)
 
-    Box_Headline_Label = Label(currency_converter, text='Koju valutu zelite da promenite:', bg='#007780', fg='white',font=("Century Gothic",11))
+    Box_Headline_Label = Label(currency_converter, text='Koju valutu zelite da promenite:', bg='#A0522D', fg='white',font=("Century Gothic",11))
     Box_Headline_Label.grid(row=1,column=0, columnspan=1, padx=5, pady=5, sticky=W)
     #Podesavanje "Box-a" u kome se nalaze valute "--values-- je funkcija"
     box_value = StringVar() 
@@ -80,13 +80,13 @@ def currency_converter():
 
     Currency_Input.bind('<Return>',enter)
 
-    Currency_Output_Label = Label(currency_converter, text='', bg='#007780', fg='white',font=("Century Gothic",11))
+    Currency_Output_Label = Label(currency_converter, text='', bg='#A0522D', fg='white',font=("Century Gothic",11))
     Currency_Output_Label.grid(row=2,column=1, padx=5, pady=5, sticky=W)
 
-    Currency_Output1_Label = Label(currency_converter, text='', bg='#007780', fg='white',font=("Century Gothic",11))
+    Currency_Output1_Label = Label(currency_converter, text='', bg='#A0522D', fg='white',font=("Century Gothic",11))
     Currency_Output1_Label.grid(row=3,column=1, padx=5, pady=5, sticky=W)   
 
-    Currency_Output2_Label = Label(currency_converter, text='', bg='#007780', fg='white',font=("Century Gothic",11))
+    Currency_Output2_Label = Label(currency_converter, text='', bg='#A0522D', fg='white',font=("Century Gothic",11))
     Currency_Output2_Label.grid(row=4,column=1, padx=5, pady=5, sticky=W)  
 
     Currency_Output = Entry(currency_converter)
